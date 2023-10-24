@@ -12,7 +12,11 @@ namespace Commander.Data
 
         public void CreateCommand(Command command)
         {
+<<<<<<< HEAD
             if(command == null)
+=======
+            if (command == null)
+>>>>>>> controller
             {
                 throw new ArgumentNullException(nameof(command));
             }
