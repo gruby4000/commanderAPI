@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "s9Zck4By1bzg1qtpv1LtkupXyc3Dq0MzzQX8iKO5y/lm+2cDMlKmqosmQzyyhnaAhschU+uvMc6wmHu8NT95vQ==",
+  "dgSpecHash": "qkMTSPj94wZL/UsVtF40R9RdxnZKnFOvRyt8JsQu+7s17XDeiBMgHn94zuL6/Lqe6Y7e97gYZtL4rBU0RlwqQQ==",
   "success": true,
   "projectFilePath": "D:\\repos\\MVC_REST_API\\Commander\\Commander.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,8 @@
     "C:\\Users\\micha\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.13\\microsoft.aspnetcore.jsonpatch.7.0.13.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.24\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.24.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
@@ -46,6 +48,8 @@
     "C:\\Users\\micha\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
