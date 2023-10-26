@@ -16,7 +16,7 @@ namespace Commander.Data
             {
                 throw new ArgumentNullException(nameof(command));
             }
-            _context.Add(command);
+            _context.Commands.Add(command);
         }
 
         public IEnumerable<Command> GetAllCommands()

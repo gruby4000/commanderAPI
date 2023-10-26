@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
+using Azure;
 using Commander.Data;
 using Commander.DTOs;
 using Commander.Models;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Commander.Controller
@@ -61,6 +63,32 @@ namespace Commander.Controller
             }
             _mapper.Map(commandUpdateDTO, commandFromRepo);
 
+            _repository.UpdateCommand(commandFromRepo);
+            _repository.SaveChanges();
+
+            return NoContent();
+        }
+
+        //Patch api/commands/{id}
+        [HttpPatch("{id}")]
+        public ActionResult PartialCommandUpdate(int id, JsonPatchDocument<CommandUpdateDTO> patchDocument)
+        {
+            var commandFromRepo = _repository.GetCommandById(id);
+
+            if(commandFromRepo == null)
+            {
+                return NotFound();
+            }
+
+            var commandToPatch = _mapper.Map<CommandUpdateDTO>(commandFromRepo);
+            patchDocument.ApplyTo(commandToPatch, ModelState);
+
+            if(!TryValidateModel(commandToPatch))
+            {
+                return ValidationProblem(ModelState);
+            }
+
+            _mapper.Map(commandToPatch, commandFromRepo);
             _repository.UpdateCommand(commandFromRepo);
             _repository.SaveChanges();
 
