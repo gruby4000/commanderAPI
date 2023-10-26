@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "5e2b15fe-6fbc-4cac-8632-066494696f43",
+		"name": "CommandAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22771099"
+	},
+	"item": [
+		{
+			"name": "commands",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7206/api/commands",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7206",
+					"path": [
+						"api",
+						"commands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commands/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7206/api/commands/8",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7206",
+					"path": [
+						"api",
+						"commands",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commands",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"howTo\": \"Initialize git repository\",\r\n    \"line\": \"git init\",\r\n    \"platform\": \"GIT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7206/api/commands/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7206",
+					"path": [
+						"api",
+						"commands",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"howTo\": \"Save changes in SQL\",\r\n    \"line\": \"_repositoryName.SaveChanges();\",\r\n    \"platform\": \"C#\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7206/api/commands/8",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7206",
+					"path": [
+						"api",
+						"commands",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"op\": \"replace\",\r\n    \"path\": \"/howto\",\r\n    \"value\": \"some new value\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7206/api/commands/9",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7206",
+					"path": [
+						"api",
+						"commands",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7206/api/commands/9",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7206",
+					"path": [
+						"api",
+						"commands",
+						"9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
